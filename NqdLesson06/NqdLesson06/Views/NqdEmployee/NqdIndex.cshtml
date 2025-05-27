@@ -1,0 +1,52 @@
+﻿@model IEnumerable<NqdLesson06.Models.NqdEmployee>
+
+@{
+    ViewData["Title"] = "Danh sách nhân viên";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="mb-4">Danh sách nhân viên</h1>
+        <a href="/NqdEmployee/NqdCreate" class="btn btn-primary">Thêm Mới</a>
+    </div>
+   
+
+    <table class="table table-hover table-bordered">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Lương</th>
+                <th>Trạng thái</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var nqdEmp in Model)
+            {
+                <tr>
+                    <td>@nqdEmp.NqdId</td>
+                    <td>@nqdEmp.NqdName</td>
+                    <td>@nqdEmp.NqdBirthDay.ToString("dd/MM/yyyy")</td>
+                    <td>@nqdEmp.NqdEmail</td>
+                    <td>@nqdEmp.NqdPhone</td>
+                    <td>@nqdEmp.NqdSalary.ToString("N0") VND</td>
+                    <td>
+                        @if (nqdEmp.NqdStatus)
+                        {
+                            <span class="badge bg-success">Đang làm</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">Nghỉ</span>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

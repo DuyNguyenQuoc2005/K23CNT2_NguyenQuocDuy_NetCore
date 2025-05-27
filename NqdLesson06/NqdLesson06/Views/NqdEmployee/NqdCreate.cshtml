@@ -1,0 +1,64 @@
+﻿@model NqdLesson06.Models.NqdEmployee
+
+@{
+    ViewData["Title"] = "Thêm Nhân Viên Mới";
+}
+
+<!-- Bootstrap + FontAwesome -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<div class="container mt-4 mb-5">
+    <h3 class="mb-4">@ViewData["Title"]</h3>
+
+    <form asp-action="NqdCreate" method="post">
+        <!-- Họ tên -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Họ tên</span>
+            <input type="text" name="NqdName" class="form-control" placeholder="Nhập họ tên" required />
+        </div>
+
+        <!-- Ngày sinh -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Ngày sinh</span>
+            <input type="date" name="NqdBirthDay" class="form-control" required />
+        </div>
+
+        <!-- Email -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Email</span>
+            <input type="email" name="NqdEmail" class="form-control" placeholder="Email nhân viên" />
+        </div>
+
+        <!-- Điện thoại -->
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="fas fa-phone"></i></span>
+            <input type="text" name="NqdPhone" class="form-control" placeholder="Số điện thoại" />
+        </div>
+
+        <!-- Lương -->
+        <div class="input-group mb-3">
+            <span class="input-group-text"><i class="fas fa-dollar-sign"></i></span>
+            <input type="number" name="NqdSalary" class="form-control" placeholder="Lương cơ bản" min="0" />
+        </div>
+
+        <!-- Trạng thái -->
+        <div class="input-group mb-3">
+            <span class="input-group-text">Trạng thái</span>
+            <select name="NqdStatus" class="form-select">
+                <option value="true">Đang làm</option>
+                <option value="false">Nghỉ</option>
+            </select>
+        </div>
+
+        <!-- Nút -->
+        <div class="mt-4 d-flex gap-2">
+            <button type="submit" class="btn btn-success">
+                <i class="fas fa-save"></i> Lưu lại
+            </button>
+            <a href="@Url.Action("NqdIndex", "NqdEmployee")" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i> Quay lại
+            </a>
+        </div>
+    </form>
+</div>
