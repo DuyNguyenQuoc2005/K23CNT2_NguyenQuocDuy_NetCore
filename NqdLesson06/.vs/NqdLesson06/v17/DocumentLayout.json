@@ -66,8 +66,7 @@
               "RelativeToolTip": "NqdLesson06\\Views\\NqdEmployee\\NqdCreate.cshtml",
               "ViewState": "AgIAACoAAAAAAAAAAAAAACcAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T14:39:17.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T14:39:17.536Z"
             },
             {
               "$type": "Document",
@@ -79,8 +78,7 @@
               "RelativeToolTip": "NqdLesson06\\Views\\NqdEmployee\\NqdIndex.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAsAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T14:07:09.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T14:07:09.163Z"
             },
             {
               "$type": "Document",
@@ -90,7 +88,7 @@
               "RelativeDocumentMoniker": "NqdLesson06\\Controllers\\NqdEmployeeController.cs",
               "ToolTip": "E:\\Education\\K23CNT2-NetCore\\K23CNT2-NguyenQuocDuy-NetCore\\K23CNT2_NguyenQuocDuy_NetCore\\NqdLesson06\\NqdLesson06\\Controllers\\NqdEmployeeController.cs",
               "RelativeToolTip": "NqdLesson06\\Controllers\\NqdEmployeeController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAqwDwAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwDwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T13:36:05.939Z",
               "EditorCaption": ""
@@ -105,8 +103,7 @@
               "RelativeToolTip": "NqdLesson06\\Models\\NqdEmployee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T13:29:24.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T13:29:24.519Z"
             },
             {
               "$type": "Document",
@@ -118,8 +115,7 @@
               "RelativeToolTip": "NqdLesson06\\Views\\NqdHome\\NqdIndex.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T13:16:14.673Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T13:16:14.673Z"
             },
             {
               "$type": "Document",
@@ -131,8 +127,7 @@
               "RelativeToolTip": "NqdLesson06\\Views\\NqdHome\\NqdAbout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T13:05:16.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T13:05:16.624Z"
             },
             {
               "$type": "Document",
@@ -144,8 +139,7 @@
               "RelativeToolTip": "NqdLesson06\\Controllers\\NqdHomeController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T13:03:55.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T13:03:55.278Z"
             },
             {
               "$type": "Document",
@@ -157,8 +151,7 @@
               "RelativeToolTip": "NqdLesson06\\Views\\Shared\\_NqdNavBar.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAB7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T13:02:17.324Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T13:02:17.324Z"
             },
             {
               "$type": "Document",
@@ -170,8 +163,7 @@
               "RelativeToolTip": "NqdLesson06\\Views\\Shared\\_NqdLayout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T12:59:45.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T12:59:45.764Z"
             },
             {
               "$type": "Document",
@@ -183,8 +175,7 @@
               "RelativeToolTip": "NqdLesson06\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T13:14:53.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T13:14:53.523Z"
             },
             {
               "$type": "Document",
@@ -196,8 +187,7 @@
               "RelativeToolTip": "NqdLesson06\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-27T12:59:09.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-27T12:59:09.053Z"
             }
           ]
         }
