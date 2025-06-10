@@ -1,0 +1,59 @@
+﻿@model IEnumerable<NqdLesson08.Models.NqdAccount>
+
+@{
+    ViewData["Title"] = "NqdIndex";
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary mb-4">📋 Danh sách tài khoản</h2>
+
+    <a asp-action="NqdCreate" class="btn btn-success mb-3">
+        ➕ Tạo tài khoản mới
+    </a>
+
+    <table class="table table-bordered table-hover table-striped align-middle">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().NqdId)</th>
+                <th>@Html.DisplayNameFor(model => model.First().NqdFullName)</th>
+                <th>@Html.DisplayNameFor(model => model.First().NqdEmail)</th>
+                <th>@Html.DisplayNameFor(model => model.First().NqdPhone)</th>
+                <th>@Html.DisplayNameFor(model => model.First().NqdAddress)</th>
+                <th>Ảnh đại diện</th>
+                <th>@Html.DisplayNameFor(model => model.First().NqdBirthday)</th>
+                <th>@Html.DisplayNameFor(model => model.First().NqdGender)</th>
+                <th>@Html.DisplayNameFor(model => model.First().NqdPassword)</th>
+                <th>Facebook</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.NqdId</td>
+                    <td>@item.NqdFullName</td>
+                    <td><a href="mailto:@item.NqdEmail">@item.NqdEmail</a></td>
+                    <td>@item.NqdPhone</td>
+                    <td>@item.NqdAddress</td>
+                    <td>
+                        <img src="~/images/@item.NqdAvatar" alt="avatar" width="60" height="60" class="rounded-circle border">
+                    </td>
+                    <td>@item.NqdBirthday.ToString("dd/MM/yyyy")</td>
+                    <td>@item.NqdGender</td>
+                    <td>@item.NqdPassword</td>
+                    <td>
+                        <a href="@item.NqdFacebook" target="_blank" class="text-decoration-none">
+                            🔗 Facebook
+                        </a>
+                    </td>
+                    <td class="text-center">
+                        <a asp-action="NqdEdit" asp-route-id="@item.NqdId" class="btn btn-warning btn-sm mb-1">✏️ Sửa</a><br />
+                        <a asp-action="NqdDetails" asp-route-id="@item.NqdId" class="btn btn-info btn-sm mb-1">🔍 Chi tiết</a><br />
+                        <a asp-action="NqdDelete" asp-route-id="@item.NqdId" class="btn btn-danger btn-sm">🗑️ Xoá</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
