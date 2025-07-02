@@ -1,0 +1,66 @@
+﻿@model NqdLesson11.Models.Category
+
+@{
+    ViewData["Title"] = "Thêm Mới Nhân Viên";
+    Layout = "_NqdLayout";
+}
+
+<h2 class="text-center mb-4">@ViewData["Title"]</h2>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <form asp-action="NqdCreate" class="card shadow-lg rounded-3">
+            <div class="card-header bg-primary text-white">
+                <h5 class="mb-0">Nhập Thông Tin Nhân Viên</h5>
+            </div>
+
+            <div class="card-body">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="mb-3">
+                    <label asp-for="NqdEmpId" class="form-label"></label>
+                    <input asp-for="NqdEmpId" class="form-control" />
+                    <span asp-validation-for="NqdEmpId" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NqdEmpName" class="form-label"></label>
+                    <input asp-for="NqdEmpName" class="form-control" />
+                    <span asp-validation-for="NqdEmpName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NqdEmpLevel" class="form-label"></label>
+                    <input asp-for="NqdEmpLevel" class="form-control" />
+                    <span asp-validation-for="NqdEmpLevel" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NqdEmpStartDate" class="form-label"></label>
+                    <input asp-for="NqdEmpStartDate" class="form-control" type="date" />
+                    <span asp-validation-for="NqdEmpStartDate" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="NqdEmpStatus" class="form-label"></label>
+                    <select asp-for="NqdEmpStatus" class="form-select">
+                        <option value="true">Show</option>
+                        <option value="false">Hide</option>
+                    </select>
+                    <span asp-validation-for="NqdEmpStatus" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="card-footer d-flex justify-content-between">
+                <input type="submit" value="Lưu" class="btn btn-success" name="btnNqdCreate" />
+                <a asp-action="NqdIndex" class="btn btn-secondary">Quay lại danh sách</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

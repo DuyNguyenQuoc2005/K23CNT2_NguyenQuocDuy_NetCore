@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NqdLesson11", "NqdLesson11\NqdLesson11.csproj", "{E7CA3D4E-D8E1-4DF2-A31F-A1DE3809F7B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7CA3D4E-D8E1-4DF2-A31F-A1DE3809F7B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CA3D4E-D8E1-4DF2-A31F-A1DE3809F7B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CA3D4E-D8E1-4DF2-A31F-A1DE3809F7B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CA3D4E-D8E1-4DF2-A31F-A1DE3809F7B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D81A0FA-C056-4A1F-9536-4D56EE6B0403}
+	EndGlobalSection
+EndGlobal

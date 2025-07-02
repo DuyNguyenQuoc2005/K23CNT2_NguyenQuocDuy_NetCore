@@ -1,0 +1,42 @@
+﻿@model NqdLesson11.Models.Category
+
+@{
+    ViewData["Title"] = "Thông Tin Chi Tiết";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NqdEmpName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NqdEmpName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NqdEmpLevel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NqdEmpLevel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NqdEmpStartDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NqdEmpStartDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NqdEmpStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NqdEmpStatus)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="NqdEdit" asp-route-id="@Model?.NqdEmpId">Edit</a> |
+    <a asp-action="NqdIndex">Quay lại danh sách</a>
+</div>

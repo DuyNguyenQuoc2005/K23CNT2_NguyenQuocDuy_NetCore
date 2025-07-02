@@ -1,0 +1,63 @@
+﻿@model IEnumerable<NqdLesson11.Models.Category>
+
+@{
+    ViewData["Title"] = "Danh Sách Nhân Viên";
+    Layout = "_NqdLayout";
+}
+
+<h2 class="text-center my-4">@ViewData["Title"]</h2>
+
+<div class="text-end mb-3">
+    <a asp-action="NqdCreate" class="btn btn-success">
+        <i class="bi bi-plus-circle"></i> Thêm Mới Nhân Viên
+    </a>
+</div>
+
+<table class="table table-hover table-bordered shadow-sm rounded">
+    <thead class="table-dark text-center">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.NqdEmpId)</th>
+            <th>@Html.DisplayNameFor(model => model.NqdEmpName)</th>
+            <th>@Html.DisplayNameFor(model => model.NqdEmpLevel)</th>
+            <th>@Html.DisplayNameFor(model => model.NqdEmpStartDate)</th>
+            <th>@Html.DisplayNameFor(model => model.NqdEmpStatus)</th>
+            <th>Chức Năng</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr class="text-center align-middle">
+                <td>@item.NqdEmpId</td>
+                <td>@item.NqdEmpName</td>
+                <td>@item.NqdEmpLevel</td>
+                <td>
+                    @item.NqdEmpStartDate?.ToString("dd/MM/yyyy")
+                </td>
+
+                <td>
+                    @if (item.NqdEmpStatus == true)
+                    {
+                        <span class="badge bg-success"><i class="bi bi-check-circle-fill"></i> Show</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary"><i class="bi bi-x-circle-fill"></i> Hide</span>
+                    }
+
+                </td>
+                <td>
+                    <a asp-action="NqdEdit" asp-route-nqdId="@item.NqdEmpId" class="btn btn-sm btn-warning me-1">
+                        <i class="bi bi-pencil-square"></i>
+                    </a>
+                    <a asp-action="NqdDetails" asp-route-nqdId="@item.NqdEmpId" class="btn btn-sm btn-info text-white me-1">
+                        <i class="bi bi-info-circle"></i>
+                    </a>
+                    <a asp-action="NqdDelete" asp-route-nqdId="@item.NqdEmpId" class="btn btn-sm btn-danger">
+                        <i class="bi bi-trash"></i>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
